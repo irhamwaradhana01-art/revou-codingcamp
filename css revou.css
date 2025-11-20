@@ -1,0 +1,102 @@
+/* Gaya Dasar Body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+}
+
+/* Container Utama */
+.container {
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: left; /* JUDUL RATA KIRI */
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Area Input dan Tombol */
+.input-area {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 5px; /* Jarak antar input dan tombol */
+}
+
+#taskInput, #dateInput {
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+#taskInput {
+    flex-grow: 1; 
+}
+
+#dateInput {
+    width: 130px; /* Lebar tetap untuk input tanggal */
+}
+
+.input-area button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Daftar Tugas (List) */
+#taskList {
+    list-style: none;
+    padding: 0;
+}
+
+#taskList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px dotted #ddd;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+#taskList li:last-child {
+    border-bottom: none;
+}
+
+/* Tampilan Konten Tugas (Teks & Tanggal) */
+.task-date {
+    color: #6c757d; 
+    font-size: 0.9em;
+    font-weight: normal;
+    margin-left: 5px;
+}
+
+/* Gaya untuk Tugas yang Selesai */
+#taskList li.completed .task-content {
+    text-decoration: line-through; /* Coretan pada tugas dan tanggal */
+    color: #888;
+}
+
+/* Tombol Hapus */
+.delete-btn {
+    background-color: #f44336; 
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+}
