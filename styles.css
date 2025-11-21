@@ -1,0 +1,196 @@
+/* Reset Dasar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Warna latar belakang ringan */
+    color: #333;
+}
+
+/* --- Header dan Navigasi --- */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Konten Utama */
+main {
+    padding: 20px 40px;
+}
+
+/* --- Bagian Selamat Datang --- */
+.welcome-section {
+    padding-bottom: 40px;
+    text-align: left;
+}
+
+.welcome-section h1 {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.welcome-section p {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+.main-content-placeholder {
+    width: 100%;
+    height: 300px; /* Tinggi yang cukup untuk area portofolio/konten */
+    border: 1px solid #000; /* Border seperti di gambar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #888;
+}
+
+.section-divider {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 40px 0;
+}
+
+/* --- Bagian Headquarter --- */
+.headquarter-section h2 {
+    margin-bottom: 40px;
+}
+
+.hq-locations {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    text-align: center;
+}
+
+.hq-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hq-circle {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    border-radius: 50%; /* Membuatnya lingkaran */
+    margin-bottom: 10px;
+}
+
+/* --- Bagian Message Us (Formulir) --- */
+.message-us-section h2 {
+    margin-bottom: 20px;
+}
+
+.message-us-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding-bottom: 60px;
+}
+
+.message-form {
+    display: grid;
+    grid-template-columns: 150px 1fr; /* Kolom untuk label dan input */
+    gap: 10px;
+    width: 50%; /* Mengambil setengah lebar */
+}
+
+.message-form label {
+    align-self: center;
+    text-align: right;
+}
+
+.message-form input[type="text"],
+.message-form input[type="date"],
+.message-form textarea {
+    padding: 8px;
+    border: 1px solid #000; /* Border hitam seperti di gambar */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.gender-options {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.gender-options label {
+    text-align: left;
+}
+
+/* Penyesuaian untuk input radio di grid */
+.message-form > label:nth-of-type(3) { /* Label "Jenis Kelamin" */
+    grid-column: 1 / 2;
+}
+.gender-options { /* Opsi radio */
+    grid-column: 2 / 3;
+}
+.message-form label[for="message"] { /* Label "Pesan" */
+    grid-column: 1 / 2;
+}
+.message-form textarea { /* Textarea */
+    grid-column: 2 / 3;
+}
+.message-form button { /* Tombol submit */
+    grid-column: 2 / 3;
+    width: 100px;
+    padding: 8px;
+    background-color: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Kotak Informasi (Sisi Kanan) */
+.info-box {
+    border: 1px solid #000;
+    padding: 20px;
+    width: 45%; /* Mengambil lebar yang tersisa */
+    min-height: 200px; /* Agar tingginya menyerupai gambar */
+}
+
+.info-box hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: right;
+    padding: 10px 40px;
+    font-size: 0.8em;
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+}
+ 
+
+/* Styling untuk gambar di Portofolio */
+.portfolio-image {
+    width: 250px; /* Atur lebar gambar */
+    height: auto; /* Jaga rasio aspek */
+    border: 2px solid #333; /* Tambahkan bingkai */
+    border-radius: 8px; /* Sudut membulat */
+    display: block; /* Agar gambar berada di baris baru */
+    margin: 10px 0; /* Tambahkan jarak atas dan bawah */
+}
